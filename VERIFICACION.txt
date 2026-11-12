@@ -14,3 +14,5 @@ DELETE: HTTP 204. GET después de eliminar: HTTP 404 y listado sin el registro.
 Evidencia actual: verification/http-results-own-repo.json.
 Los archivos http-results.json y crud-before-delete.json corresponden a la prueba anterior al cambio de repositorio.
 Servicios activos: Config Server 7070, Catálogo 8081, PostgreSQL 5433.
+
+Pruebas repetidas y aprobadas tras corregir PostgreSQL a 5433: Config Server con repositorio propio, Swagger, OpenAPI, POST, GET, PUT, DELETE y 404 posterior.

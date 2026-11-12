@@ -1,52 +1,45 @@
-[
-  {
-    "method": "GET",
-    "path": "/categoria",
-    "status": 200
-  },
-  {
-    "method": "GET",
-    "path": "/v3/api-docs",
-    "status": 200
-  },
-  {
-    "method": "GET",
-    "path": "/doc/swagger-ui.html",
-    "status": 200
-  },
-  {
-    "method": "POST",
-    "path": "/categoria",
-    "status": 200
-  },
-  {
-    "method": "GET",
-    "path": "/categoria/2",
-    "status": 200
-  },
-  {
-    "method": "PUT",
-    "path": "/categoria/2",
-    "status": 200
-  },
-  {
-    "method": "GET",
-    "path": "/categoria/2",
-    "status": 200
-  },
-  {
-    "method": "DELETE",
-    "path": "/categoria/2",
-    "status": 204
-  },
-  {
-    "method": "GET",
-    "path": "/categoria/2",
-    "status": 404
-  },
-  {
-    "method": "GET",
-    "path": "/categoria",
-    "status": 200
-  }
-]
+{
+  "postgresql_port": 5433,
+  "results": [
+    {
+      "method": "GET",
+      "path": "/categoria",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/v3/api-docs",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/doc/swagger-ui.html",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/categoria",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/categoria/3",
+      "status": 200
+    },
+    {
+      "method": "PUT",
+      "path": "/categoria/3",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/categoria/3",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/categoria/3",
+      "status": 404
+    }
+  ]
+}
