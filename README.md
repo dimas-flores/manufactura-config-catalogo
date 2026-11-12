@@ -2,7 +2,7 @@
 
 Práctica de la guía del curso. Config Server obtiene `config-data/ms-catalogo-service-development.yml` de este repositorio privado, rama `main`.
 
-Requiere Java 17+, PostgreSQL 15+ y Maven Wrapper incluido. Crear `ms_catalogo` con `crear_base.sql`. La configuración de práctica usa PostgreSQL en localhost:5432, usuario postgres y clave 123456.
+Requiere Java 17+, PostgreSQL 15+ y Maven Wrapper incluido. Crear `ms_catalogo` con `crear_base.sql`. La configuración de práctica usa PostgreSQL en localhost:5433, usuario postgres y clave 123456.
 
 Definir GITHUB_TOKEN con un token que tenga permiso de lectura de este repositorio. GITHUB_USERNAME tiene como valor predeterminado devmijaelflores-boop. No guardar el token en archivos versionados. Con GitHub CLI autenticado: `export GITHUB_TOKEN="$(gh auth token)"`.
 
