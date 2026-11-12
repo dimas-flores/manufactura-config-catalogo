@@ -1,0 +1,17 @@
+RECREACIÓN DEL MANUAL
+
+Se copiaron los POM, clases Java y archivos YAML de Guia_Config_Server_ms_catalogo.docx, incluidas sus versiones, credenciales de práctica y URL de GitHub.
+
+1. Instalar JDK 17 o superior y PostgreSQL 15 o superior.
+2. Ejecutar crear_base.sql en PostgreSQL. La guía usa postgres / 123456.
+3. La carpeta config-data contiene el archivo que la guía pide publicar en GitHub. El Config Server conserva la URL del profesor: https://github.com/noetipo/UNAJIngSoftware.git (rama main). Para usar un repositorio propio, publicar config-data y cambiar spring.cloud.config.server.git.uri.
+4. En ms-config-server: ./mvnw spring-boot:run
+5. Verificar http://localhost:7070/ms-catalogo-service/development con root / 123456.
+6. En ms-catalogo-service: ./mvnw spring-boot:run
+7. Abrir http://localhost:8081/doc/swagger-ui.html y probar el CRUD /categoria.
+
+En Windows usar mvnw.cmd. En IntelliJ habilitar el procesamiento de anotaciones para Lombok.
+
+No se publicó ningún repositorio ni se modificó una base de datos existente.
+
+ATENCIÓN: la configuración actual del GitHub del profesor usa puerto 5433 y clave 12345678, diferentes al documento. La prueba real se realizó con esos valores. Ver VERIFICACION.txt.

@@ -1,0 +1,19 @@
+server:
+  port: 7070
+ 
+spring:
+  application:
+    name: config-server
+  security:
+    user:
+      name: root
+      password: 123456
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/devmijaelflores-boop/manufactura-config-catalogo.git
+          searchPaths: config-data
+          default-label: main
+          username: ${GITHUB_USERNAME:devmijaelflores-boop}
+          password: ${GITHUB_TOKEN}

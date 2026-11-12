@@ -1,0 +1,80 @@
+[
+  {
+    "method": "GET",
+    "url": "http://localhost:7070/ms-catalogo-service/development",
+    "status": 401,
+    "expected": 401
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:7070/ms-catalogo-service/development",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/v3/api-docs",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/doc/swagger-ui.html",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "POST",
+    "url": "http://localhost:8081/categoria",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/categoria",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/categoria/1",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "PUT",
+    "url": "http://localhost:8081/categoria/1",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/categoria/1",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/categoria",
+    "status": 200,
+    "expected": 200
+  },
+  {
+    "method": "DELETE",
+    "url": "http://localhost:8081/categoria/1",
+    "status": 204,
+    "expected": 204
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/categoria/1",
+    "status": 404,
+    "expected": 404
+  },
+  {
+    "method": "GET",
+    "url": "http://localhost:8081/categoria",
+    "status": 200,
+    "expected": 200
+  }
+]
