@@ -1,21 +1,16 @@
-VERIFICACIÓN REAL — 11 de noviembre de 2026
+VERIFICACIÓN ACTUAL — 11 de noviembre de 2026
 
-Ambos proyectos compilaron con Maven y se ejecutaron sin cambios en sus fuentes.
-Config Server 7070: 200 con credenciales; 401 sin credenciales.
-Configuración cargada desde el GitHub del manual, commit f61844c5b9947ecc046c7a946425ae8eca8a3682.
-Catálogo 8081: conexión real a PostgreSQL 18.6 y creación automática de tabla categoria.
-Swagger /doc/swagger-ui.html: 200. OpenAPI /v3/api-docs: 200 y rutas de categoría presentes.
-POST: 200, creó Electrónica con id 1.
-GET listado y GET por id: 200, datos correctos.
-PUT: 200, nombre actualizado; GET confirmó el cambio.
-SQL SELECT confirmó persistencia de Electrónica actualizada.
-DELETE: 204; GET posterior: 404; listado y SQL confirmaron eliminación.
-Resultados HTTP y OpenAPI en verification/.
+Config Server recompilado y ejecutado con repositorio privado propio:
+https://github.com/devmijaelflores-boop/manufactura-config-catalogo
+Se confirmó en propertySources que la configuración proviene de este repositorio.
+El token se pasa mediante GITHUB_TOKEN y no se guarda en el proyecto.
 
-DIFERENCIA ENTRE MANUAL Y GITHUB
-El manual y config-data local usan puerto 5432 y clave 123456.
-El GitHub del profesor usa puerto 5433 y clave 12345678.
-Se probó la configuración real de GitHub con una instancia PostgreSQL aislada en 127.0.0.1:5433.
-Binarios locales: /home/sae/.local/opt/catalogo-postgresql/usr/bin
-Datos: /home/sae/.local/share/catalogo-postgresql/data
-No se modificaron el repositorio remoto ni los archivos originales del manual.
+PostgreSQL 18.6: localhost:5432, base ms_catalogo, usuario postgres, clave de práctica 123456.
+Catálogo arrancó y conectó a PostgreSQL mediante la configuración del servidor.
+Swagger y OpenAPI: HTTP 200.
+POST, GET listado, GET por ID y PUT: HTTP 200; se comprobaron los valores creados y actualizados.
+DELETE: HTTP 204. GET después de eliminar: HTTP 404 y listado sin el registro.
+
+Evidencia actual: verification/http-results-own-repo.json.
+Los archivos http-results.json y crud-before-delete.json corresponden a la prueba anterior al cambio de repositorio.
+Servicios activos: Config Server 7070, Catálogo 8081, PostgreSQL 5432.
