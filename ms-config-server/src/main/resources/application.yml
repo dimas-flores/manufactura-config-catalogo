@@ -12,8 +12,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/devmijaelflores-boop/manufactura-config-catalogo.git
+          uri: https://github.com/dimas-flores/manufactura-config-catalogo.git
           searchPaths: config-data
           default-label: main
-          username: ${GITHUB_USERNAME:devmijaelflores-boop}
+          username: ${GITHUB_USERNAME:dimas-flores}
           password: ${GITHUB_TOKEN}

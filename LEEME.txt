@@ -1,6 +1,6 @@
 PROYECTO CONFIG SERVER Y CATÁLOGO
 
-Repositorio propio privado: https://github.com/devmijaelflores-boop/manufactura-config-catalogo
+Repositorio propio privado: https://github.com/dimas-flores/manufactura-config-catalogo
 Config Server lee config-data de ese repositorio, rama main.
 PostgreSQL: localhost:5433 / ms_catalogo / postgres / clave de práctica 123456.
 
