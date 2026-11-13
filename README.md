@@ -45,7 +45,3 @@ La consulta al servidor de configuración requiere el usuario `root` y la contra
 En la ejecución previa al cambio de cuenta de GitHub se comprobaron la compilación de ambos proyectos, la lectura de configuración, la conexión con PostgreSQL y las operaciones del catálogo. Se obtuvieron respuestas HTTP 200 para creación, consulta y actualización; HTTP 204 para eliminación y HTTP 404 al consultar el registro eliminado. También se verificaron Swagger y la especificación OpenAPI.
 
 Después de actualizar el repositorio a la cuenta `dimas-flores`, se confirmó el acceso al archivo de configuración mediante la API de GitHub. Se encuentra pendiente repetir la ejecución integral con esta cuenta. Los resultados disponibles se conservan en `verification/` y en `VERIFICACION.txt`.
-
-## 7. Material de referencia
-
-Tipo Mamani, N. W. (2026). *Guía práctica: Config Server y microservicio de catálogo con PostgreSQL y Swagger* [Material de clase]. Universidad Nacional de Juliaca.
