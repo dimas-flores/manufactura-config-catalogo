@@ -1,5 +1,0 @@
-**/target/
-.env
-*.log
-*.pid
-verification/config-server.json
