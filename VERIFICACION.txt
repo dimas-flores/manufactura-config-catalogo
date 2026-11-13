@@ -18,3 +18,5 @@ Servicios activos: Config Server 7070, Catálogo 8081, PostgreSQL 5433.
 Pruebas repetidas y aprobadas tras corregir PostgreSQL a 5433: Config Server con repositorio propio, Swagger, OpenAPI, POST, GET, PUT, DELETE y 404 posterior.
 
 Cambio de cuenta el 12 de noviembre: dimas-flores. Las pruebas anteriores corresponden a la cuenta anterior; pendiente nueva comprobación de ejecución.
+
+Corrección final: PostgreSQL configurado en su puerto predeterminado 5432. Pendiente repetir pruebas de ejecución con la cuenta dimas-flores y esta configuración final.

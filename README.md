@@ -14,7 +14,7 @@ Implementar la centralización de configuraciones mediante Spring Cloud Config S
 | --- | --- | --- |
 | ms-config-server | 7070 | Obtener la configuración almacenada en GitHub |
 | ms-catalogo-service | 8081 | Exponer las operaciones REST de categorías |
-| PostgreSQL | 5433 | Almacenar los datos de la base ms_catalogo |
+| PostgreSQL | 5432 | Almacenar los datos de la base ms_catalogo |
 
 El servidor consulta el repositorio privado `dimas-flores/manufactura-config-catalogo`, en la rama `main`. El archivo de configuración se encuentra en `config-data/ms-catalogo-service-development.yml`.
 
@@ -24,7 +24,7 @@ Java 17 o superior, Maven Wrapper, Spring Boot 4.1.2, Spring Cloud 2025.1.4, Spr
 
 ## 4. Configuración del entorno
 
-La base de datos se denomina `ms_catalogo`. Para crearla se proporciona el archivo `crear_base.sql`. La conexión de práctica utiliza `localhost:5433`, el usuario `postgres` y la contraseña `123456`.
+La base de datos se denomina `ms_catalogo`. Para crearla se proporciona el archivo `crear_base.sql`. La conexión de práctica utiliza `localhost:5432`, el usuario `postgres` y la contraseña `123456`.
 
 El acceso al repositorio privado se realiza mediante las variables de entorno `GITHUB_USERNAME` y `GITHUB_TOKEN`. La primera tiene como valor predeterminado `dimas-flores`; la segunda debe contener un token con permiso de lectura del repositorio. El token no se incluye en el código fuente.
 
