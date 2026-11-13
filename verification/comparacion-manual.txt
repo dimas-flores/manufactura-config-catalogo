@@ -1,0 +1,37 @@
+Comparación línea por línea de los 12 archivos indicados en la guía. Se omiten únicamente líneas vacías finales.
+
+ms-config-server/pom.xml: IDÉNTICO
+
+ms-config-server/src/main/java/com/ejemplo/msconfigserver/MsConfigServerApplication.java: IDÉNTICO
+
+ms-config-server/src/main/resources/application.yml: DIFERENCIAS
+--- Manual/ms-config-server/src/main/resources/application.yml
++++ Proyecto/ms-config-server/src/main/resources/application.yml
+@@ -12,6 +12,8 @@
+     config:
+       server:
+         git:
+-          uri: https://github.com/noetipo/UNAJIngSoftware.git
++          uri: https://github.com/dimas-flores/manufactura-config-catalogo.git
+           searchPaths: config-data
+           default-label: main
++          username: ${GITHUB_USERNAME:dimas-flores}
++          password: ${GITHUB_TOKEN}
+
+config-data/ms-catalogo-service-development.yml: IDÉNTICO
+
+ms-catalogo-service/pom.xml: IDÉNTICO
+
+ms-catalogo-service/src/main/resources/application.yml: IDÉNTICO
+
+ms-catalogo-service/src/main/java/com/ejemplo/mscatalogo/entity/Categoria.java: IDÉNTICO
+
+ms-catalogo-service/src/main/java/com/ejemplo/mscatalogo/repository/CategoriaRepository.java: IDÉNTICO
+
+ms-catalogo-service/src/main/java/com/ejemplo/mscatalogo/service/CategoriaService.java: IDÉNTICO
+
+ms-catalogo-service/src/main/java/com/ejemplo/mscatalogo/service/impl/CategoriaServiceImpl.java: IDÉNTICO
+
+ms-catalogo-service/src/main/java/com/ejemplo/mscatalogo/controller/CategoriaController.java: IDÉNTICO
+
+ms-catalogo-service/src/main/java/com/ejemplo/mscatalogo/MsCatalogoServiceApplication.java: IDÉNTICO
