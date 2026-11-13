@@ -42,6 +42,6 @@ La consulta al servidor de configuración requiere el usuario `root` y la contra
 
 ## 6. Verificación funcional
 
-En la ejecución previa al cambio de cuenta de GitHub se comprobaron la compilación de ambos proyectos, la lectura de configuración, la conexión con PostgreSQL y las operaciones del catálogo. Se obtuvieron respuestas HTTP 200 para creación, consulta y actualización; HTTP 204 para eliminación y HTTP 404 al consultar el registro eliminado. También se verificaron Swagger y la especificación OpenAPI.
+Se recompilaron y ejecutaron ambos proyectos con el repositorio privado de `dimas-flores` y PostgreSQL en el puerto 5432. Se confirmó que Config Server obtiene la configuración del repositorio propio. Swagger y OpenAPI respondieron correctamente. Las operaciones de creación, consulta y actualización devolvieron HTTP 200; la eliminación devolvió HTTP 204 y la consulta posterior HTTP 404. Se comprobó que el registro eliminado no aparece en el listado.
 
-Después de actualizar el repositorio a la cuenta `dimas-flores`, se confirmó el acceso al archivo de configuración mediante la API de GitHub. Se encuentra pendiente repetir la ejecución integral con esta cuenta. Los resultados disponibles se conservan en `verification/` y en `VERIFICACION.txt`.
+Los resultados de esta ejecución se encuentran en `verification/http-results-final.json`.

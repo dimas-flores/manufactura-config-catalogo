@@ -1,22 +1,11 @@
-VERIFICACIÓN ACTUAL — 11 de noviembre de 2026
+VERIFICACIÓN FINAL — 12 de noviembre de 2026
 
-Config Server recompilado y ejecutado con repositorio privado propio:
-https://github.com/dimas-flores/manufactura-config-catalogo
-Se confirmó en propertySources que la configuración proviene de este repositorio.
-El token se pasa mediante GITHUB_TOKEN y no se guarda en el proyecto.
-
-PostgreSQL 18.6: localhost:5433, base ms_catalogo, usuario postgres, clave de práctica 123456.
-Catálogo arrancó y conectó a PostgreSQL mediante la configuración del servidor.
-Swagger y OpenAPI: HTTP 200.
-POST, GET listado, GET por ID y PUT: HTTP 200; se comprobaron los valores creados y actualizados.
-DELETE: HTTP 204. GET después de eliminar: HTTP 404 y listado sin el registro.
-
-Evidencia actual: verification/http-results-own-repo.json.
-Los archivos http-results.json y crud-before-delete.json corresponden a la prueba anterior al cambio de repositorio.
-Servicios activos: Config Server 7070, Catálogo 8081, PostgreSQL 5433.
-
-Pruebas repetidas y aprobadas tras corregir PostgreSQL a 5433: Config Server con repositorio propio, Swagger, OpenAPI, POST, GET, PUT, DELETE y 404 posterior.
-
-Cambio de cuenta el 12 de noviembre: dimas-flores. Las pruebas anteriores corresponden a la cuenta anterior; pendiente nueva comprobación de ejecución.
-
-Corrección final: PostgreSQL configurado en su puerto predeterminado 5432. Pendiente repetir pruebas de ejecución con la cuenta dimas-flores y esta configuración final.
+Ambos proyectos recompilados y ejecutados correctamente.
+Config Server: 7070, configuración obtenida del repositorio privado dimas-flores/manufactura-config-catalogo.
+PostgreSQL: 5432, base ms_catalogo.
+Catálogo: 8081.
+Swagger y OpenAPI: 200.
+POST, GET y PUT: 200, con valores verificados.
+DELETE: 204. Consulta posterior: 404. Listado sin registro eliminado.
+Evidencia: verification/http-results-final.json.
+Las evidencias con otros nombres corresponden a ejecuciones anteriores.
