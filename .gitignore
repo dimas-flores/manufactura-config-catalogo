@@ -1,0 +1,22 @@
+# Archivos generados por Maven
+**/target/
+
+# Configuración local del IDE
+**/.idea/
+*.iml
+
+# Variables de entorno y credenciales locales
+.env
+.env.*
+!.env.example
+
+# Registros y procesos
+*.log
+*.pid
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Respuesta local del servidor de configuración
+verification/config-server.json
